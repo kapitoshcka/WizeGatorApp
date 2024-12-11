@@ -18,6 +18,7 @@ WizeGATOR is a mobile application designed to connect learners with tutors in va
      - A short description or tagline (e.g., "FUN")
      - An optional emoji or image for personalization
    - A submission button allows users to complete the registration process.
+![BecomeTutorPage](WizeGatorApp/View/BecomeTutor-1.png)
 
 ### 3. **Tutor Dashboard**
    - Displays a list of approved tutors.
