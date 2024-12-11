@@ -32,15 +32,19 @@ WizeGATOR is a mobile application designed to connect learners with tutors in va
 
 ![TutorDash](WizeGatorApp/View/TutorDash-1.png)
 
-### 4.
+### 4. **New Added Tutor to the Dashboard**
+   - The updated Tutor Dashboard screen showcases available tutors along with their areas of expertise.
+   - Users can quickly message a tutor directly from this screen.
 
 ![NewAddedTutor](WizeGatorApp/View/NewAddedTutor-1.png)
 
-### 5.
+### 5. **Send a Message**
+   - The Send a Message screen allows users to type and send messages to the selected tutor easily.
+   - This feature ensures effective communication.
 
 ![SendMessage](WizeGatorApp/View/SendMessage-1.png)
 
-## Technology
+## Technology Used
 - Developed in **Swift** for iOS devices.
 - Focuses on simplicity and user-friendly design.
 
@@ -51,6 +55,4 @@ WizeGATOR is a mobile application designed to connect learners with tutors in va
    - **Become a Tutor** to register and offer your expertise.
 3. Navigate the Tutor Dashboard to view approved tutors and connect with them.
 
-## Vision
-WizeGATOR aims to build a community where knowledge sharing is easy, accessible, and engaging for everyone.
 
