@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    // Preloaded default tutors
+    
     @State private var tutors: [Tutor] = [
         Tutor(id: 1, name: "Philip Karnatsewich", expertise: "CSC", emoji: "👨‍💻"),
         Tutor(id: 2, name: "John Doh", expertise: "BUS", emoji: "📈"),
@@ -17,12 +17,12 @@ struct ContentView: View {
         Tutor(id: 4, name: "Alice Johnson", expertise: "MATH", emoji: "📐")
     ]
     
-    @State private var messages: [Message] = [] // Store sent messages
+    @State private var messages: [Message] = []
 
     var body: some View {
         NavigationView {
             VStack(spacing: 0) {
-                // Top Navbar Section
+
                 HStack {
                     Image(systemName: "graduationcap.fill")
                         .resizable()
@@ -38,7 +38,6 @@ struct ContentView: View {
                 .padding()
                 .background(Color.green)
                 
-                // Welcome Section
                 VStack(spacing: 20) {
                     Text("Welcome to WizeGATOR")
                         .font(.system(size: 28, weight: .bold))
@@ -84,13 +83,12 @@ struct ContentView: View {
                 .cornerRadius(10)
                 .padding()
             }
-            .background(Color.green.opacity(0.1)) // Added background color for the whole content
+            .background(Color.green.opacity(0.1))
         }
-        .navigationViewStyle(StackNavigationViewStyle()) // Ensure proper navigation appearance
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
-// Preview with preloaded data
 #Preview {
     ContentView()
 }

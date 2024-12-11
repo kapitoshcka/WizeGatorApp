@@ -10,13 +10,13 @@ import SwiftUI
 
 struct SendMessageView: View {
     @State private var message: String = ""
-    @State private var isMessageSent: Bool = false  // Track if the message was successfully sent
+    @State private var isMessageSent: Bool = false
 
-    let tutorName: String  // Pass the tutor's name to personalize the view
+    let tutorName: String
 
     var body: some View {
         VStack {
-            // Top Navbar Section
+
             HStack {
                 Image(systemName: "graduationcap.fill")
                     .resizable()
@@ -32,7 +32,7 @@ struct SendMessageView: View {
             .padding()
             .background(Color.green)
             
-            // Message Input Section
+
             VStack(spacing: 20) {
                 Text("Send a Message to \(tutorName)")
                     .font(.system(size: 28, weight: .bold))
@@ -45,15 +45,13 @@ struct SendMessageView: View {
                     .shadow(radius: 5)
                 
                 Button(action: {
-                    // Logic to send the message
+
                     if !message.isEmpty {
                         print("Message sent to \(tutorName): \(message)")
                         
-                        // Clear the message field and show success message
                         message = ""
                         isMessageSent = true
                         
-                        // Hide the success message after 2 seconds
                         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
                             isMessageSent = false
                         }
@@ -69,7 +67,6 @@ struct SendMessageView: View {
                         .shadow(radius: 5)
                 }
 
-                // Success message
                 if isMessageSent {
                     Text("Congratulations! Your message was sent.")
                         .font(.subheadline)

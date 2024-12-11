@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct MessageLogView: View {
-    let messages: [Message] // Display sent messages
+    let messages: [Message]
     
     var body: some View {
         VStack {

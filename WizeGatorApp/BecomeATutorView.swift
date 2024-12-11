@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct BecomeATutorView: View {
-    @Binding var tutors: [Tutor]  // Binding to the shared list of tutors
+    @Binding var tutors: [Tutor]
     @State private var name: String = ""
     @State private var expertise: String = ""
     @State private var emoji: String = ""
